@@ -40,20 +40,20 @@
 		05BB876B188C600D00E040E7 /* TCSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSwitchViewController.m; sourceTree = "<group>"; };
 		05BB876D188C601F00E040E7 /* TCEarringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCEarringController.h; sourceTree = "<group>"; };
 		05BB876E188C601F00E040E7 /* TCEarringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCEarringController.m; sourceTree = "<group>"; };
-		05E6F98F188874C400E3C818 /* BTTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E6F98F188874C400E3C818 /* MandyEarring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MandyEarring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E6F992188874C400E3C818 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05E6F994188874C400E3C818 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05E6F996188874C400E3C818 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		05E6F99A188874C400E3C818 /* BTTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTTest-Info.plist"; sourceTree = "<group>"; };
+		05E6F99A188874C400E3C818 /* MandyEarring-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MandyEarring-Info.plist"; sourceTree = "<group>"; };
 		05E6F99C188874C400E3C818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		05E6F99E188874C400E3C818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05E6F9A0188874C400E3C818 /* BTTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTTest-Prefix.pch"; sourceTree = "<group>"; };
+		05E6F9A0188874C400E3C818 /* MandyEarring-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MandyEarring-Prefix.pch"; sourceTree = "<group>"; };
 		05E6F9A1188874C400E3C818 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
 		05E6F9A2188874C400E3C818 /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
 		05E6F9A4188874C400E3C818 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		05E6F9AA188874C500E3C818 /* BTTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E6F9AA188874C500E3C818 /* MandyEarringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MandyEarringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E6F9AB188874C500E3C818 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		05E6F9B3188874C500E3C818 /* BTTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTTestTests-Info.plist"; sourceTree = "<group>"; };
+		05E6F9B3188874C500E3C818 /* MandyEarringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MandyEarringTests-Info.plist"; sourceTree = "<group>"; };
 		05E6F9B5188874C500E3C818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		05E6F9B7188874C500E3C818 /* BTTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTTestTests.m; sourceTree = "<group>"; };
 		05E6F9C1188874D900E3C818 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -88,8 +88,8 @@
 		05E6F986188874C400E3C818 = {
 			isa = PBXGroup;
 			children = (
-				05E6F998188874C400E3C818 /* BTTest */,
-				05E6F9B1188874C500E3C818 /* BTTestTests */,
+				05E6F998188874C400E3C818 /* MandyEarring */,
+				05E6F9B1188874C500E3C818 /* MandyEarring */,
 				05E6F991188874C400E3C818 /* Frameworks */,
 				05E6F990188874C400E3C818 /* Products */,
 			);
@@ -98,8 +98,8 @@
 		05E6F990188874C400E3C818 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05E6F98F188874C400E3C818 /* BTTest.app */,
-				05E6F9AA188874C500E3C818 /* BTTestTests.xctest */,
+				05E6F98F188874C400E3C818 /* MandyEarring.app */,
+				05E6F9AA188874C500E3C818 /* MandyEarringTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		05E6F998188874C400E3C818 /* BTTest */ = {
+		05E6F998188874C400E3C818 /* MandyEarring */ = {
 			isa = PBXGroup;
 			children = (
 				05E6F9A1188874C400E3C818 /* TCAppDelegate.h */,
@@ -129,33 +129,34 @@
 				05E6F9A4188874C400E3C818 /* Images.xcassets */,
 				05E6F999188874C400E3C818 /* Supporting Files */,
 			);
-			path = BTTest;
+			path = MandyEarring;
 			sourceTree = "<group>";
 		};
 		05E6F999188874C400E3C818 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				05E6F99A188874C400E3C818 /* BTTest-Info.plist */,
+				05E6F99A188874C400E3C818 /* MandyEarring-Info.plist */,
 				05E6F99B188874C400E3C818 /* InfoPlist.strings */,
 				05E6F99E188874C400E3C818 /* main.m */,
-				05E6F9A0188874C400E3C818 /* BTTest-Prefix.pch */,
+				05E6F9A0188874C400E3C818 /* MandyEarring-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		05E6F9B1188874C500E3C818 /* BTTestTests */ = {
+		05E6F9B1188874C500E3C818 /* MandyEarring */ = {
 			isa = PBXGroup;
 			children = (
 				05E6F9B7188874C500E3C818 /* BTTestTests.m */,
 				05E6F9B2188874C500E3C818 /* Supporting Files */,
 			);
-			path = BTTestTests;
+			name = MandyEarring;
+			path = MandyEarringTests;
 			sourceTree = "<group>";
 		};
 		05E6F9B2188874C500E3C818 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				05E6F9B3188874C500E3C818 /* BTTestTests-Info.plist */,
+				05E6F9B3188874C500E3C818 /* MandyEarringTests-Info.plist */,
 				05E6F9B4188874C500E3C818 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -164,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05E6F98E188874C400E3C818 /* BTTest */ = {
+		05E6F98E188874C400E3C818 /* MandyEarring */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05E6F9BB188874C500E3C818 /* Build configuration list for PBXNativeTarget "BTTest" */;
+			buildConfigurationList = 05E6F9BB188874C500E3C818 /* Build configuration list for PBXNativeTarget "MandyEarring" */;
 			buildPhases = (
 				05E6F98B188874C400E3C818 /* Sources */,
 				05E6F98C188874C400E3C818 /* Frameworks */,
@@ -176,14 +177,14 @@
 			);
 			dependencies = (
 			);
-			name = BTTest;
+			name = MandyEarring;
 			productName = BTTest;
-			productReference = 05E6F98F188874C400E3C818 /* BTTest.app */;
+			productReference = 05E6F98F188874C400E3C818 /* MandyEarring.app */;
 			productType = "com.apple.product-type.application";
 		};
-		05E6F9A9188874C500E3C818 /* BTTestTests */ = {
+		05E6F9A9188874C500E3C818 /* MandyEarringTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05E6F9BE188874C500E3C818 /* Build configuration list for PBXNativeTarget "BTTestTests" */;
+			buildConfigurationList = 05E6F9BE188874C500E3C818 /* Build configuration list for PBXNativeTarget "MandyEarringTests" */;
 			buildPhases = (
 				05E6F9A6188874C500E3C818 /* Sources */,
 				05E6F9A7188874C500E3C818 /* Frameworks */,
@@ -194,9 +195,9 @@
 			dependencies = (
 				05E6F9B0188874C500E3C818 /* PBXTargetDependency */,
 			);
-			name = BTTestTests;
+			name = MandyEarringTests;
 			productName = BTTestTests;
-			productReference = 05E6F9AA188874C500E3C818 /* BTTestTests.xctest */;
+			productReference = 05E6F9AA188874C500E3C818 /* MandyEarringTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05E6F98A188874C400E3C818 /* Build configuration list for PBXProject "BTTest" */;
+			buildConfigurationList = 05E6F98A188874C400E3C818 /* Build configuration list for PBXProject "MandyEarring" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05E6F98E188874C400E3C818 /* BTTest */,
-				05E6F9A9188874C500E3C818 /* BTTestTests */,
+				05E6F98E188874C400E3C818 /* MandyEarring */,
+				05E6F9A9188874C500E3C818 /* MandyEarringTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,7 +282,7 @@
 /* Begin PBXTargetDependency section */
 		05E6F9B0188874C500E3C818 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 05E6F98E188874C400E3C818 /* BTTest */;
+			target = 05E6F98E188874C400E3C818 /* MandyEarring */;
 			targetProxy = 05E6F9AF188874C500E3C818 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -386,9 +387,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTTest/BTTest-Prefix.pch";
-				INFOPLIST_FILE = "BTTest/BTTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MandyEarring/MandyEarring-Info.plist";
+				PRODUCT_NAME = MandyEarring;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -402,9 +402,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTTest/BTTest-Prefix.pch";
-				INFOPLIST_FILE = "BTTest/BTTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MandyEarring/MandyEarring-Info.plist";
+				PRODUCT_NAME = MandyEarring;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -426,8 +425,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BTTestTests/BTTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BTTestTests/MandyEarringTests-Info.plist";
+				PRODUCT_NAME = MandyEarringTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -445,8 +444,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BTTest/BTTest-Prefix.pch";
-				INFOPLIST_FILE = "BTTestTests/BTTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BTTestTests/MandyEarringTests-Info.plist";
+				PRODUCT_NAME = MandyEarringTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -455,7 +454,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05E6F98A188874C400E3C818 /* Build configuration list for PBXProject "BTTest" */ = {
+		05E6F98A188874C400E3C818 /* Build configuration list for PBXProject "MandyEarring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05E6F9B9188874C500E3C818 /* Debug */,
@@ -464,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05E6F9BB188874C500E3C818 /* Build configuration list for PBXNativeTarget "BTTest" */ = {
+		05E6F9BB188874C500E3C818 /* Build configuration list for PBXNativeTarget "MandyEarring" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05E6F9BC188874C500E3C818 /* Debug */,
@@ -473,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05E6F9BE188874C500E3C818 /* Build configuration list for PBXNativeTarget "BTTestTests" */ = {
+		05E6F9BE188874C500E3C818 /* Build configuration list for PBXNativeTarget "MandyEarringTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05E6F9BF188874C500E3C818 /* Debug */,

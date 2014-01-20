@@ -34,7 +34,7 @@ static NSString *kVibrationCharacteristic = @"5FC569A0-74A9-4FA4-B8B7-8354C86E45
 }
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
-	NSLog(@"CM state is %ld", central.state);
+	NSLog(@"CM state is %d", (int)central.state);
 	if(central.state < CBCentralManagerStatePoweredOn) {
 		_earring = nil;
 	} else {
