@@ -9,12 +9,15 @@
 #import "TCSwitchViewController.h"
 #import "TCEarringController.h"
 #import "TCPatternPlayer.h"
+@import CoreTelephony;
 
 @interface TCSwitchViewController ()
 {
 	TCEarringController *_earring;
 	TCPatternPlayer *_player;
 	IBOutlet UIButton *_button;
+	CTCallCenter *_callCenter;
+	UIBackgroundTaskIdentifier _bgTask;
 }
 @end
 
@@ -26,6 +29,27 @@
 	_player.earring = _earring;
 	[_earring addObserver:self forKeyPath:@"connected" options:NSKeyValueObservingOptionInitial context:NULL];
 	[_earring addObserver:self forKeyPath:@"vibrating" options:NSKeyValueObservingOptionInitial context:NULL];
+	
+	_callCenter = [CTCallCenter new];
+	__weak __typeof(self) weakSelf = self;
+	_callCenter.callEventHandler = ^(CTCall *call) {
+		[weakSelf callChanged:call];
+	};
+}
+
+- (void)callChanged:(CTCall*)call
+{
+	if([call.callState isEqual:CTCallStateIncoming]) {
+		_bgTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+			[_player stop];
+			[[UIApplication sharedApplication] endBackgroundTask:_bgTask];
+		}];
+		[_player playRingingVibration];
+	} else {
+		[_player stop];
+		[[UIApplication sharedApplication] endBackgroundTask:_bgTask];
+		_bgTask = UIBackgroundTaskInvalid;
+	}
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context

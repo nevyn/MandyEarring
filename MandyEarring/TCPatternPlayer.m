@@ -47,8 +47,13 @@
 
 - (void)_toggleVibrating
 {
+	NSLog(@"Toggling");
 	_earring.vibrating = !_earring.vibrating;
-	_next = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:_cmd userInfo:nil repeats:NO];
+	if(_earring.vibrating) {
+		_next = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:_cmd userInfo:nil repeats:NO];
+	} else {
+		_next = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:_cmd userInfo:nil repeats:NO];
+	}
 }
 
 @end

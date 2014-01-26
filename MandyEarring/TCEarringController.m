@@ -81,13 +81,20 @@ static NSString *kVibrationCharacteristic = @"5FC569A0-74A9-4FA4-B8B7-8354C86E45
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
 {
-	NSLog(@"Now we have services: %@ %@", peripheral.services, [[peripheral services] valueForKey:@"UUID"]);
+	NSLog(@"Now we have services: %@ %@ %@", peripheral.services, [[peripheral services] valueForKey:@"UUID"], error);
+
+	if(error || _earring.state == CBPeripheralStateDisconnected) {
+		[self disconnected];
+		return;
+	}
+
 	for(CBService *service in peripheral.services) {
 		if([service.UUID isEqual:[CBUUID UUIDWithString:kVibrationService]]) {
 			_vibrationService = service;
 			break;
 		}
 	}
+
 	NSLog(@"Scanning for characteristics in %@", _vibrationService);
 	[_earring discoverCharacteristics:@[
 		[CBUUID UUIDWithString:kVibrationCharacteristic],
@@ -96,7 +103,13 @@ static NSString *kVibrationCharacteristic = @"5FC569A0-74A9-4FA4-B8B7-8354C86E45
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
 {
-	NSLog(@"%@ found %@ %@ %@", service, service.characteristics, [service.characteristics valueForKey:@"UUID"], [service.characteristics valueForKey:@"value"]);
+	NSLog(@"%@ found %@ %@ %@ %@", service, service.characteristics, [service.characteristics valueForKey:@"UUID"], [service.characteristics valueForKey:@"value"], error);
+	
+	if(error || _earring.state == CBPeripheralStateDisconnected) {
+		[self disconnected];
+		return;
+	}
+	
 	for(CBCharacteristic *characteristic in service.characteristics) {
 		if([characteristic.UUID isEqual:[CBUUID UUIDWithString:kVibrationCharacteristic]]) {
 			_vibrationCharacteristic = characteristic;
@@ -128,6 +141,8 @@ static NSString *kVibrationCharacteristic = @"5FC569A0-74A9-4FA4-B8B7-8354C86E45
 
 - (void)disconnected
 {
+	if(_earring && _earring.state != CBPeripheralStateDisconnected)
+		[_central cancelPeripheralConnection:_earring];
 	_earring = nil;
 	_vibrationService = nil;
 	_vibrationCharacteristic = nil;
