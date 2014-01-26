@@ -8,10 +8,12 @@
 
 #import "TCSwitchViewController.h"
 #import "TCEarringController.h"
+#import "TCPatternPlayer.h"
 
 @interface TCSwitchViewController ()
 {
 	TCEarringController *_earring;
+	TCPatternPlayer *_player;
 	IBOutlet UIButton *_button;
 }
 @end
@@ -20,6 +22,8 @@
 - (void)viewDidLoad
 {
 	_earring = [TCEarringController new];
+	_player = [TCPatternPlayer new];
+	_player.earring = _earring;
 	[_earring addObserver:self forKeyPath:@"connected" options:NSKeyValueObservingOptionInitial context:NULL];
 	[_earring addObserver:self forKeyPath:@"vibrating" options:NSKeyValueObservingOptionInitial context:NULL];
 }
@@ -33,6 +37,21 @@
 - (IBAction)toggle:(UIButton*)sender
 {
 	_earring.vibrating = !sender.selected;
+}
+
+- (IBAction)messageVibration:(id)sender
+{
+	[_player playMessageVibration];
+}
+
+- (IBAction)toggleRinging:(UIButton*)sender
+{
+	sender.selected = !sender.selected;
+	if(sender.selected) {
+		[_player playRingingVibration];
+	} else {
+		[_player stop];
+	}
 }
 
 @end

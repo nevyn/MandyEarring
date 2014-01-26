@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0587566E18957E320035D287 /* TCPatternPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587566D18957E320035D287 /* TCPatternPlayer.m */; };
 		05BB876C188C600D00E040E7 /* TCSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BB876B188C600D00E040E7 /* TCSwitchViewController.m */; };
 		05BB876F188C601F00E040E7 /* TCEarringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BB876E188C601F00E040E7 /* TCEarringController.m */; };
 		05E6F993188874C400E3C818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E6F992188874C400E3C818 /* Foundation.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0587566C18957E320035D287 /* TCPatternPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPatternPlayer.h; sourceTree = "<group>"; };
+		0587566D18957E320035D287 /* TCPatternPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPatternPlayer.m; sourceTree = "<group>"; };
 		05BB876A188C600D00E040E7 /* TCSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSwitchViewController.h; sourceTree = "<group>"; };
 		05BB876B188C600D00E040E7 /* TCSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSwitchViewController.m; sourceTree = "<group>"; };
 		05BB876D188C601F00E040E7 /* TCEarringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCEarringController.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				05BB876E188C601F00E040E7 /* TCEarringController.m */,
 				05BB876A188C600D00E040E7 /* TCSwitchViewController.h */,
 				05BB876B188C600D00E040E7 /* TCSwitchViewController.m */,
+				0587566C18957E320035D287 /* TCPatternPlayer.h */,
+				0587566D18957E320035D287 /* TCPatternPlayer.m */,
 				05E6F9A4188874C400E3C818 /* Images.xcassets */,
 				05E6F999188874C400E3C818 /* Supporting Files */,
 			);
@@ -266,6 +271,7 @@
 				05E6F9A3188874C400E3C818 /* TCAppDelegate.m in Sources */,
 				05BB876C188C600D00E040E7 /* TCSwitchViewController.m in Sources */,
 				05BB876F188C601F00E040E7 /* TCEarringController.m in Sources */,
+				0587566E18957E320035D287 /* TCPatternPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -115,7 +115,6 @@ static NSString *kVibrationCharacteristic = @"5FC569A0-74A9-4FA4-B8B7-8354C86E45
 
 - (void)setVibrating:(BOOL)vibrating
 {
-	NSLog(@"Writing %d", vibrating);
 	[_earring writeValue:[NSData dataWithBytes:(char[]){vibrating} length:1] forCharacteristic:_vibrationCharacteristic type:CBCharacteristicWriteWithResponse];
 	//[_earring readValueForCharacteristic:_vibrationCharacteristic];
 	_vibrating = vibrating;
